@@ -268,8 +268,11 @@ name = "docutils"
 version = "0.20.1"
 description = "Docutils -- Python Documentation Utilities"
 optional = false
-python-versions = "*"
-files = []
+python-versions = ">=3.7"
+files = [
+    {file = "docutils-0.20.1-py3-none-any.whl", hash = "sha256:96f387a2c5562db4476f09f13bbab2192e764cac08ebbf3a34a95d9b1e4a59d6"},
+    {file = "docutils-0.20.1.tar.gz", hash = "sha256:f08a4e276c3a1583a86dce3e34aba3fe04d02bba2dd51ed16106244e8a923e3b"},
+]
 
 [[package]]
 name = "exceptiongroup"
@@ -391,11 +394,15 @@ name = "libtmux"
 version = "0.37.0"
 description = "Typed library that provides an ORM wrapper for tmux, a terminal multiplexer."
 optional = false
-python-versions = "<4.0,>=3.8"
-files = [
-    {file = "libtmux-0.37.0-py3-none-any.whl", hash = "sha256:7e8cbab30b033d132b6fca5dddb575bb7f6a1fd802328e7174f9b49023556376"},
-    {file = "libtmux-0.37.0.tar.gz", hash = "sha256:21955c5dce6332db41abad5e26ae8c4062ef2b9a89099bd57a36f52be1d5270f"},
-]
+python-versions = "^3.8"
+files = []
+develop = false
+
+[package.source]
+type = "git"
+url = "https://github.com/tmux-python/libtmux.git"
+reference = "improved-options"
+resolved_reference = "5505d8264c55bc50c102eb3d5db5adc371f7f1ec"
 
 [[package]]
 name = "linkify-it-py"
@@ -1428,4 +1435,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "33fa6932973c2bfce8acdc57fcb1a5f2fef9692925f3b424b9d89bff5aacd57b"
+content-hash = "e38e7f4736a315c47fc72a1c5bd5e4021a4ccadffb6516d4d641896bc38bd801"
