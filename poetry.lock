@@ -399,7 +399,7 @@ develop = false
 type = "git"
 url = "https://github.com/tmux-python/libtmux.git"
 reference = "improved-options"
-resolved_reference = "74f36b7ea01960f3dc4be2c2935ffa631ba31c09"
+resolved_reference = "7f907374282fe97c9e7b5534df268eaf3e059086"
 
 [[package]]
 name = "linkify-it-py"
